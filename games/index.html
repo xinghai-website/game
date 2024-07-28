@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>星海游戏-游戏列表</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom right, #3f5efb, purple, orange);
+            height: 100vh;
+            color: white;
+        }
+
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 60px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(5px);
+            display: flex;
+            align-items: center;
+            padding: 0 20px;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            display: flex;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            transition: opacity 0.3s;
+        }
+
+        .nav-links a:hover {
+            opacity: 0.7;
+        }
+
+
+        .game-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            margin-top: 80px; /* 确保不会被header遮挡 */
+        }
+
+        .game-card {
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            padding: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .game-card img {
+            height: auto;
+            object-fit: cover;
+        }
+
+        .game-card h3 {
+            margin: 10px 0;
+            font-size: 1.2em;
+        }
+    </style>
+    <link rel="icon" href="/asstes/image/logo.png">
+</head>
+<body>
+    <div class="header">
+        <img src="/asstes/image/logo.png" alt="星海游戏" width="50" height="50">
+        <div class="logo">星海游戏</div>
+        <div class="nav-links">
+            <a href="https://hixinghai.us.kg">首页</a>
+            <a href="games/">游戏</a>
+            <a href="#news">新闻</a>
+            <a href="#contact">联系</a>
+        </div>
+    </div>
+    <div class="game-list">
+        <!-- 示例游戏卡片 -->
+        <div class="game-card">
+            <img src="/asstes/image/logo.png" alt="Game Image" width="100">
+            <h3>蓝海星城</h3>
+            蓝海星城，一个综合型《我的世界》（Minecraft）服务器。紧跟Mojang的步伐，及时跟进大版本更新，确保玩家体验最新鲜的游戏内容，同时兼容过往经典版本，让怀旧与现代并行不悖。在蓝海星界的广阔天地里，原版生存模式只是冰山一角，更多特色玩法即将揭晓。从1.7至1.21，无论你偏爱哪个版本的《我的世界》，这里都能找到属于你的那片天空。同时，您也成为赞助者，即有机会在不破坏游戏平衡的前提下，解锁专属特权，与腐竹共同探索无尽可能。
+            <br>JavaIP：mc.game.hixinghai.us.kg
+            <br>基岩版：mc.game.hixinghai.us.kg:27272
+        </div>
+        <div class="game-card">
+            <img src="/asstes/image/logo.png" alt="Game Image" width="100">
+            <h3>灵翼小镇</h3>
+            开发中...
+        </div>
+        <!-- 更多游戏卡片... -->
+    </div>
+</body>
+</html>
