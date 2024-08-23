@@ -26,12 +26,12 @@
 		<local:MyButton Margin="0,4,0,10" Width="250" Height="35"
                     Text="进入服务器（使用推荐IP）" 
 					EventType="启动游戏" 
-					EventData="1.21-Farbic|mc2.game.hixinghai.us.kg" 
+					EventData="1.21|mc2.game.hixinghai.us.kg" 
 					ToolTip="服务器 IP：mc.game.hixinghai.us.kg" />
 		<local:MyButton Margin="0,4,0,0" Width="250" Height="35"
                     Text="进入服务器（使用备用IP）" 
 					EventType="启动游戏" 
-					EventData="1.21-Farbic|mc.game.hixinghai.us.kg" 
+					EventData="1.21|mc.game.hixinghai.us.kg" 
 					ToolTip="服务器 IP：mc2.game.hixinghai.us.kg" />
 	</StackPanel>
 </local:MyCard>
