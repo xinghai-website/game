@@ -1,0 +1,46 @@
+﻿<local:MyCard Title="介绍" Margin="0,0,0,15" CanSwap="False" IsSwaped="False">
+    <StackPanel Margin="25,40,23,15">
+        <Image Width="100" 
+            Margin="5,0,0,0" 
+            Source="{path}PCL/Images/Logo.jpg"/>
+        <TextBlock FontSize="24" FontWeight="Bold" Margin="0,0,0,4" 
+                   HorizontalAlignment="Center"
+                   Text="蓝海星城-于蓝海中，入星之界。" />
+        <TextBlock Margin="0,0,0,4"
+            TextWrapping="Wrap"
+            Text="蓝海星城，一个综合型《我的世界》（Minecraft）服务器。紧跟Mojang的步伐，及时跟进大版本更新，确保玩家体验最新鲜的游戏内容，同时兼容过往经典版本，让怀旧与现代并行不悖。在蓝海星城的广阔天地里，原版生存模式只是冰山一角，更多特色玩法即将揭晓。从1.13至1.21，无论你偏爱哪个版本的《我的世界》，这里都能找到属于你的那片天空。同时，您也成为赞助者，即有机会在不破坏游戏平衡的前提下，解锁专属特权，与腐竹共同探索无尽可能。" />
+        
+        <!-- 添加按钮并居中 -->
+        <local:MyButton Margin="0,4,0,0" 
+                        HorizontalAlignment="Center"
+                        Width="200" Height="35"
+                        Text="查看介绍" 
+                        EventType="打开网页" 
+                        EventData="https://www.minebbs.com/threads/28565/" 
+                        ToolTip="点击访问 Minebbs 论坛" />
+    </StackPanel>
+</local:MyCard>
+<local:MyCard Title="即刻入服" Margin="0,0,0,15" CanSwap="True" IsSwaped="False">
+	<StackPanel Margin="25,40,23,15">
+		<local:MyHint Margin="0,0,0,10" Text="请先尝试使用第一个按钮！如不行，再尝试第二个。" IsWarn="False" />
+		<local:MyButton Margin="0,4,0,10" Width="250" Height="35"
+                    Text="进入服务器（使用推荐IP）" 
+					EventType="启动游戏" 
+					EventData="1.21-Farbic|mc2.game.hixinghai.us.kg" 
+					ToolTip="服务器 IP：mc.game.hixinghai.us.kg" />
+		<local:MyButton Margin="0,4,0,0" Width="250" Height="35"
+                    Text="进入服务器（使用备用IP）" 
+					EventType="启动游戏" 
+					EventData="1.21-Farbic|mc.game.hixinghai.us.kg" 
+					ToolTip="服务器 IP：mc2.game.hixinghai.us.kg" />
+	</StackPanel>
+</local:MyCard>
+
+<local:MyCard Title="解决问题" Margin="0,0,0,15" CanSwap="True" IsSwaped="False">
+	<StackPanel Margin="25,40,23,15">
+		<local:MyButton Margin="0,4,0,8" Width="200" Height="35"
+                    Text="快速截屏" EventType="打开文件" EventData="C:\Program Files\WindowsApps\Microsoft.ScreenSketch_11.2407.3.0_x64__8wekyb3d8bbwe\SnippingTool\SnippingTool.exe" />
+		<local:MyButton Margin="0,4,0,10" Width="200" Height="35"
+                    Text="打开日志" EventType="打开文件" EventData="Log1.txt" ToolTip="日志文件就在 PCL 文件夹内，且名为 Log1.txt" />
+	</StackPanel>
+</local:MyCard>
